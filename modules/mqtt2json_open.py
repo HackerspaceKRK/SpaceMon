@@ -3,7 +3,9 @@ __cacheable__ = True
 
 import urllib2
 import json
+import time
 from application import config
+
 
 CONFIG_KEY = 'module_mqtt2json_open'
 
@@ -23,4 +25,4 @@ def update_document(data):
 			data['state'] = {}
 
 		data['state']['open'] = is_open
-		
+
